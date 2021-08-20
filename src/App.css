@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  
 }
 
 .App-logo {
@@ -15,7 +16,9 @@
 }
 
 .App-header {
-  background-color: black;
+  background-color: #000;
+  opacity: 0.8;
+  background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #000 10px ), repeating-linear-gradient( #30313355, rgb(54, 51, 51) );
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -28,16 +31,83 @@
 
 .App-link {
   color: #EF2E32;
-  font-size: 1rem;
+  font-size: 1.5rem;
   letter-spacing: .8rem;
   font-family: 'Zen Tokyo Zoo', cursive;
+  width: 100vw;
+  background-color: black;
+  padding: 1rem 0;
 }
 
 .App-red {
   color: #2C5787;
-  font-size: 1rem;
+  font-size: 1.5rem;
   letter-spacing: .8rem;
   font-family: 'Zen Tokyo Zoo', cursive;
+  width: 100vw;
+  background-color: black;
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+}
+
+.footer-contain {
+  background-color: black;
+  opacity: 0.8;
+}
+
+.footer-svg {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.footer-svg svg{
+  width: 20vw;
+  height: auto;
+}
+
+.footer-box {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-span {
+  padding: 0 1rem;
+}
+
+.about-contain{
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-media{
+  padding: 1rem;
+  width: 60vw;
+  height: 50vw;
+}
+
+.about-pa{
+  width: 80vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: justify;
+}
+
+.main-contain {
+  width: 80vw;
+  margin: auto;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.main-section {
+  text-align: justify;
 }
 
 @keyframes App-logo-spin {
@@ -55,5 +125,26 @@
   }
   .App-red {
     font-size: 2rem;
+  }
+  .footer-box {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1rem 0;
+  }
+  .footer-svg svg {
+    width: 10vw;
+  }
+  .about-contain {
+    flex-direction: row;
+  }
+  .about-media{
+    width: 40vw;
+    height: 30vw;
+  }
+  .main-contain {
+    width: 60vw;
+  }
+  .about-pa{
+    width: 30vw;
   }
 }
